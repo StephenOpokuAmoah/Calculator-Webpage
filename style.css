@@ -244,3 +244,15 @@ body.theme-right .switch label{
         /* transform: translate(-50%,-50%); */
     }
 }
+@media only screen and (max-width:400px) {
+    body{
+        height: 95vh;
+        /* background-color: red; */
+    }
+}
+@media only screen and (min-width:1920px) {
+    body{
+        height: 95vh;
+        /* background-color: red; */
+    }
+}
