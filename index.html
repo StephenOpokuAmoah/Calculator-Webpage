@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Webpage</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="all">
+                <div class="suball">
+                    <div class="calc">
+                      <h1 id="calculator-title"><marquee>Calculator</marquee></h1>
+                    </div>
+                    <div class="mode">
+                        <div class="theme-selector">
+                            <button onclick="setTheme(0)">1</button> 
+                            <button onclick="setTheme(1)">2</button> 
+                            <button onclick="setTheme(2)">3</button> 
+                        </div>
+                        <div class="switch">
+                            <input type="checkbox" id="toggle" > 
+                            <label for="toggle"></label> 
+                        </div>
+                    </div>
+                </div>
+                <span id="display">0</span>
+            </div>
+        </header>  
+        <div class="fields">
+            <button id="seven" onclick="inputDigit('7')"><h1>7</h1></button>
+            <button id="eight" onclick="inputDigit('8')"><h1>8</h1></button>
+            <button id="nine" onclick="inputDigit('9')"><h1>9</h1></button>
+            <button id="delete" onclick="deleteLastDigit()"><h1>DEL</h1></button>
+            <button id="four" onclick="inputDigit('4')"><h1>4</h1></button>
+            <button id="five" onclick="inputDigit('5')"><h1>5</h1></button>
+            <button id="six" onclick="inputDigit('6')"><h1>6</h1></button>
+            <button id="plus" onclick="inputOperator('+')"><h1>+</h1></button>
+            <button id="one" onclick="inputDigit('1')"><h1>1</h1></button>
+            <button id="two" onclick="inputDigit('2')"><h1>2</h1></button>
+            <button id="three" onclick="inputDigit('3')"><h1>3</h1></button>
+            <button id="minus" onclick="inputOperator('-')"><h1>-</h1></button>
+            <button id="dot" onclick="inputDigit('.')"><h1>.</h1></button>
+            <button id="zero" onclick="inputDigit('0')"><h1>0</h1></button>
+            <button id="divide" onclick="inputOperator('/')"><h1>/</h1></button>
+            <button id="times" onclick="inputOperator('*')"><h1>*</h1></button>
+            <button id="reset" onclick="resetCalculator()"><h1>RESET</h1></button>
+            <button id="equal" onclick="calculateResult()"><h1>=</h1></button>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
+
