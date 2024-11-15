@@ -11,7 +11,7 @@ body {
     align-items: center;
     /* overflow: hidden; */
     /* width: auto; */
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     /* height:95vh; */
 }
 /* body main{
@@ -255,4 +255,41 @@ body.theme-right .switch label{
         height: 95vh;
         /* background-color: red; */
     }
+}
+@media screen and (min-width:1101px) and (max-width:1620px){
+    body{
+        height: 99vh;
+        overflow: hidden;
+        /* flex: 0; */
+    }
+    .fields button{
+        padding: 10px;
+    }
+}
+@media only screen and (min-width:300px) and  (max-width:390px) {
+    body{
+        height: 95vh;
+        /* background-color: red; */
+    }
+    .fields button{
+        padding: 7px;
+    }
+}
+@media only screen and (min-width:391px) and  (max-width:430px) {
+    body{
+        height: 98vh;
+        /* background-color: red; */
+    }
+    /* .fields button{
+        padding: 7px;
+    } */
+}
+@media only screen and (width:768px) {
+    body{
+        height: 95vh;
+        /* background-color: red; */
+    }
+    /* .fields button{
+        padding: 7px;
+    } */
 }
